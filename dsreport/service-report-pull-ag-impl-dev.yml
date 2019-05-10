@@ -1,1 +1,46 @@
-zêŞ‘§%‰éí±êï‰Ç”®W^}«¥µš'zm§ÿå¡Æ¥†‹-ó¾´ıë«zF¿±êïzºh®ß;ïKh™Æ­º¸ÊŠxL_,¦¸§‚:Zu«Zm«›+*–ÊkŠx#¥«!£*•ö¥±éh‚§‚W¯zZè¢Òéh‚§‚W¯zZ+‚ÊkŠx­©ÂŠäÁæÖe¢"	^½é\¢gš²‰È4S¬¦¸§Ö­jÊ.­Ç®®XİmÉ²²©ÿ]5Ó·Ó}ôëú¯¡×!j¶œµêÄÊŠx
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/
+server:
+  port: 8770
+  tomcat:
+    uri-encoding: UTF-8
+
+spring.jpa.database:  mysql
+spring.jpa.show-sql:  false
+
+
+logging.level.root: INFO
+logging.level.org.springframework.web: WARN
+logging.level.com.eason: INFO
+
+spring.datasource.url:  jdbc:mysql://10.10.4.230:3306/game_report?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+spring.datasource.username: eason
+spring.datasource.password: eason
+spring.datasource.driver-class-name:  com.mysql.jdbc.Driver
+
+spring.data.mongodb.uri:  mongodb://eason:eason@10.10.4.230:27017/lottery
+
+# REDIS (RedisProperties)
+# Redisæ•°æ®åº“ç´¢å¼•ï¼ˆé»˜è®¤ä¸º0ï¼‰
+spring.redis.database:  0
+spring.redis.database10:  10
+# RedisæœåŠ¡å™¨åœ°å€
+spring.redis.host:  10.10.4.230
+# RedisæœåŠ¡å™¨è¿æ¥ç«¯å£
+spring.redis.port:  6379
+# RedisæœåŠ¡å™¨è¿æ¥å¯†ç ï¼ˆé»˜è®¤ä¸ºç©ºï¼‰
+spring.redis.password:
+# è¿æ¥æ± æœ€å¤§è¿æ¥æ•°ï¼ˆä½¿ç”¨è´Ÿå€¼è¡¨ç¤ºæ²¡æœ‰é™åˆ¶ï¼‰
+spring.redis.pool.max-active: -1
+# è¿æ¥æ± æœ€å¤§é˜»å¡ç­‰å¾…æ—¶é—´ï¼ˆä½¿ç”¨è´Ÿå€¼è¡¨ç¤ºæ²¡æœ‰é™åˆ¶ï¼‰
+spring.redis.pool.max-wait: -1
+# è¿æ¥æ± ä¸­çš„æœ€å¤§ç©ºé—²è¿æ¥
+spring.redis.pool.max-idle: 8
+# è¿æ¥æ± ä¸­çš„æœ€å°ç©ºé—²è¿æ¥
+spring.redis.pool.min-idle: 0
+# è¿æ¥è¶…æ—¶æ—¶é—´ï¼ˆæ¯«ç§’ï¼‰
+spring.redis.timeout: 0
+#TestOnBorrowè®¾ç½®ä¸ºfalseï¼Œå¯¼è‡´æœ‰æ—¶è·å–çš„è¿æ¥ä¸å¯ç”¨
+spring.redis.testOnBorrow:  false
