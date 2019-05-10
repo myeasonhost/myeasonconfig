@@ -1,8 +1,1 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8760/eureka/
-server:
-  port: 8770
-  tomcat:
-    uri-encoding: UTF-8
+zêŞ‘§%‰éí±êï‰Ç”®W^}«¥µš'zm§ÿå¡Æ¥†‹-ó¾´ıë«zF¿±êïzºh®ß;ïKh™Æ­º¸ÊŠxL_,¦¸§‚:Zu«Zm«›+*–ÊkŠx#¥«!£*•ö¥±éh‚§‚W¯zZè¢Òéh‚§‚W¯zZ+‚ÊkŠx­©ÂŠäÁæÖe¢"	^½é\¢gš²‰È4S¬¦¸§Ö­jÊ.­Ç®®XİmÉ²²©ÿ]5Ó·Ó}ôëú¯¡×!j¶œµêÄÊŠx
