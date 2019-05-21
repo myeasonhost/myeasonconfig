@@ -3,8 +3,13 @@ server:
   tomcat:
     uri-encoding: UTF-8
 
-spring.jpa.database:  mysql
-spring.jpa.show-sql:  false
+spring:
+    jpa:
+        database:  mysql
+        show-sql:  false
+        hibernate:
+              naming:
+                physical-strategy:com.eason.report.pull.ds.config.MySpringPhysicalNamingStrategy
 
 
 logging.level.root: INFO
