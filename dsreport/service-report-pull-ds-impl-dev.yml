@@ -9,7 +9,7 @@ spring:
      show-sql:  false
      hibernate:
        naming:
-          physical-strategy:com.eason.report.pull.ds.config.MySpringPhysicalNamingStrategy
+          physical-strategy: com.eason.report.pull.ds.config.MySpringPhysicalNamingStrategy
 
 
 logging.level.root: INFO
