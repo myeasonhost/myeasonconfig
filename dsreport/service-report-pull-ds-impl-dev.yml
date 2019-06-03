@@ -1,4 +1,4 @@
-target.siteId=1000
+target.siteId: 1000
 
 server:
   port: 8771
