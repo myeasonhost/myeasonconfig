@@ -16,3 +16,22 @@ spring.datasource.url:  jdbc:mysql://10.10.4.230:3306/cms?characterEncoding=utf-
 spring.datasource.username: root
 spring.datasource.password: eason
 spring.datasource.driver-class-name:  com.mysql.jdbc.Driver
+
+#请求处理的超时时间  
+ribbon.ReadTimeout: 60000  
+#请求连接的超时时间  
+ribbon.ConnectTimeout: 30000  
+
+feign.hystrix.enabled: false  
+#hystrix 熔断机制  
+hystrix:  
+  shareSecurityContext: true  
+  command:  
+    default:  
+      circuitBreaker:  
+        sleepWindowInMilliseconds: 100000  
+        forceClosed: true  
+      execution:  
+        isolation:  
+          thread:  
+            timeoutInMilliseconds: 600000
