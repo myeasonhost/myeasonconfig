@@ -56,4 +56,4 @@ ribbon.ReadTimeout: 60000
 #请求连接的超时时间  
 ribbon.ConnectTimeout: 30000  
 
-feign.hystrix.enabled: true  
+feign.hystrix.enabled: false  
