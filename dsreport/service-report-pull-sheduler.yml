@@ -76,6 +76,7 @@ spring:
             isClustered: true
             clusterCheckinInterval: 10000
             useProperties: false
+            dataSource = qzDS
           threadPool:
             class: org.quartz.simpl.SimpleThreadPool
             threadCount: 10
@@ -86,3 +87,13 @@ spring:
     #初始化表结构
     #jdbc:
       #initialize-schema: never
+
+org.quartz.dataSource.qzDS.driver: com.mysql.jdbc.Driver
+
+org.quartz.dataSource.qzDS.URL:  jdbc:mysql://10.10.4.230:3306/cms?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+
+org.quartz.dataSource.qzDS.user: root
+
+org.quartz.dataSource.qzDS.password: eason
+
+org.quartz.dataSource.qzDS.maxConnections: 10
