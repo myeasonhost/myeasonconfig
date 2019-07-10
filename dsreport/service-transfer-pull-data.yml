@@ -20,8 +20,8 @@ spring.datasource.driver-class-name:  com.mysql.jdbc.Driver
 
 spring.data.mongodb.uri:  mongodb://eason:eason@10.10.4.230:27017/lottery
 
-spring.cache.cache-names:cache1,cache2
-spring.cache.redis.time-to-live:600000
+spring.cache.cache-names:  cache1,cache2
+spring.cache.redis.time-to-live:  600000
 
 # REDIS (RedisProperties)
 # Redis数据库索引（默认为0）
