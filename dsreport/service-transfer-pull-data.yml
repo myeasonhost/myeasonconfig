@@ -11,8 +11,6 @@ cxf.jaxrs.client.classes-scan-packages: com.eason.transfer.openapi.data.api
 
 cxf:
   path: /api
-  servlet.init: 
-    service-list-path: /api
   jaxrs:
     component-scan: true
     classes-scan-packages: org.apache.cxf.jaxrs.swagger,org.apache.cxf.metrics
