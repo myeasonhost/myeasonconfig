@@ -7,13 +7,6 @@ spring.jpa.database:  mysql
 spring.jpa.show-sql:  false
 spring.jpa.hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
 
-cxf:
-  path: /api
-  servlet.init: 
-    service-list-path: /info
-  jaxrs:
-    component-scan: true
-      
 logging.level.root: INFO
 logging.level.org.springframework.web: WARN
 logging.level.com.eason: INFO
