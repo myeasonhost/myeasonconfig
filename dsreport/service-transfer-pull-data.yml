@@ -8,9 +8,12 @@ spring.jpa.show-sql:  false
 spring.jpa.hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
 
 cxf:
- jaxrs:
+  path: /api/router
+  servlet.init: 
+    service-list-path: /api
+  jaxrs:
     component-scan: true
-    classes-scan-packages: org.apache.cxf.jaxrs.swagger
+    classes-scan-packages: org.apache.cxf.jaxrs.swagger,org.apache.cxf.metrics
 
 
 logging.level.root: INFO
