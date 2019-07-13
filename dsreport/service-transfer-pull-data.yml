@@ -21,6 +21,15 @@ endpoints:
     enabled: true
     unique-names: true
 
+eureka:
+  instance:
+    prefer-ip-address: true
+    statusPageUrlPath: /api/info
+    healthCheckUrlPath: /system/health
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+      servletPath: ${cxf.path}
+      
 logging.level.root: INFO
 logging.level.org.springframework.web: WARN
 logging.level.com.eason: INFO
