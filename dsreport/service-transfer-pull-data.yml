@@ -15,6 +15,10 @@ cxf:
     component-scan: true
     classes-scan-packages: org.apache.cxf.jaxrs.swagger,org.apache.cxf.metrics
 
+endpoints:
+  jmx:
+    enabled: true
+    unique-names: true
 
 logging.level.root: INFO
 logging.level.org.springframework.web: WARN
