@@ -7,7 +7,10 @@ spring.jpa.database:  mysql
 spring.jpa.show-sql:  false
 spring.jpa.hibernate.naming.physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl 
 
-spring.jackson.serialization.indent_output: true
+ cxf:
+  jaxrs:
+    component-scan: true
+    classes-scan-packages: com.eason.transfer.openapi.data.api
 
 
 logging.level.root: INFO
