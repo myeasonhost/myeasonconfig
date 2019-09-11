@@ -2,7 +2,7 @@ server:
     port: 8082
     
 mybatis: 
-    mapper-locations:classpath: mapper/*.xml
+    mapper-locations:classpath: com/eason/**/*.xml
 
 spring:
     datasource:
