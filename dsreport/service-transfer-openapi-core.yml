@@ -3,7 +3,6 @@ server:
     
 mybatis: 
     mapper-locations:classpath: mapper/*.xml
-    typeAliasesPackage: com.eason.transfer.openapi.core.api.dao
 
 spring:
     datasource:
