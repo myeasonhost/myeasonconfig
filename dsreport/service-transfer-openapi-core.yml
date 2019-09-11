@@ -2,7 +2,7 @@ server:
     port: 8082
     
 mybatis: 
-    mapperLocations: classpath:com/eason/**/*.xml
+    mapper-locations: classpath:com/eason/**/*.xml
     typeAliasesPackage: com.eason.transfer.openapi.core.api.dao
 
 spring:
