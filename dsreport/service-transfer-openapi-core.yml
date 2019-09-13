@@ -9,8 +9,6 @@ cxf:
   path: /forward/api
   servlet.init:
     service-list-path: /router    
-  jaxrs:
-    component-scan: true
       
 spring:
     datasource:
