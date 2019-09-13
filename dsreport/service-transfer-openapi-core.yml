@@ -4,10 +4,15 @@ server:
 mybatis: 
     mapperLocations: classpath:mapper/*.xml
     # typeAliasesPackage: com.eason.transfer.openapi.core.api.dao.mapper
+
 cxf:
-    jaxrs:
-        component-scan: true
-        classes-scan-packages: com.eason.transfer.openapi.core    
+  path: /forward/api
+  servlet.init:
+    service-list-path: /router    
+  jaxrs:
+    component-scan: true
+      classes-scan-packages: com.eason.transfer.openapi.core
+      
 spring:
     datasource:
         name: dataSource
