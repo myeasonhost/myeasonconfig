@@ -8,7 +8,7 @@ mybatis:
 cxf:
   path: /forward/api
   servlet.init:
-    service-list-path: /router    
+    service-list-path: /info    
       
 spring:
     datasource:
