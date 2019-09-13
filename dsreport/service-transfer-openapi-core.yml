@@ -11,7 +11,6 @@ cxf:
     service-list-path: /router    
   jaxrs:
     component-scan: true
-      classes-scan-packages: com.eason.transfer.openapi.core
       
 spring:
     datasource:
