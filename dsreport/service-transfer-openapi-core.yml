@@ -8,7 +8,9 @@ mybatis:
 cxf:
   path: /forward
   servlet.init:
-    service-list-path: /info    
+    service-list-path: /info
+  jaxrs:
+    component-scan: true
       
 spring:
     datasource:
