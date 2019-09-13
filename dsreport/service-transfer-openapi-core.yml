@@ -2,15 +2,15 @@ server:
     port: 8082
     
 mybatis: 
-    mapperLocations: classpath:mapper/*.xml
-    # typeAliasesPackage: com.eason.transfer.openapi.core.api.dao.mapper
+    mapperLocations: classpath:com/eason/**/*.xml
+    typeAliasesPackage: com.eason.transfer.openapi.core.api.dao.mapper
 
 cxf:
-  path: /forward
-  servlet.init:
-    service-list-path: /info
-  jaxrs:
-    component-scan: true
+    path: /forward
+    servlet.init:
+        service-list-path: /info
+    jaxrs:
+        component-scan: true
       
 spring:
     datasource:
