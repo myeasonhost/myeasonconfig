@@ -33,7 +33,7 @@ logging.level.root: INFO
 logging.level.org.springframework.web: WARN
 logging.level.com.eason: INFO
 
-#spring.data.mongodb.uri:  mongodb://eason:eason@10.10.4.230:27017/lottery
+spring.data.mongodb.uri:  mongodb://eason:eason@10.10.4.230:27017/lottery
 
 # REDIS (RedisProperties)
 # Redis数据库索引（默认为0）
