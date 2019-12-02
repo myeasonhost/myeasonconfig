@@ -3,7 +3,7 @@ server:
     
 mybatis: 
     mapperLocations: classpath:com/eason/**/*.xml
-    typeAliasesPackage: com.eason.transfer.openapi.chess.api.dao.mapper
+    typeAliasesPackage: com.eason.transfer.openapi.chess.dao.mapper
 
 spring:
     datasource:
