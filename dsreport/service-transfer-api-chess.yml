@@ -1,9 +1,7 @@
 server:
     port: 8072
     
-mybatis: 
-    mapperLocations: classpath:com/eason/**/*.xml
-    typeAliasesPackage: com.eason.transfer.openapi.chess.dao
+mybatis.mapper-locations: classpath:com/eason/**/*.xml
 
 spring:
     datasource:
