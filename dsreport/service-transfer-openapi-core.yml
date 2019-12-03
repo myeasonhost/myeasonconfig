@@ -11,6 +11,8 @@ cxf:
         component-scan: true
       
 spring:
+    main:
+        allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
     datasource:
         name: dataSource
         url: jdbc:mysql://10.28.10.230:3306/myeason
