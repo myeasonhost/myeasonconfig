@@ -16,7 +16,7 @@ cxf:
 spring:
     datasource:
         name: dataSource
-        url: jdbc:mysql://10.20.25.230:3306/myeason
+        url: jdbc:mysql://10.20.22.230:3306/myeason
         username: root
         password: eason
         connectionProperties: config.decrypt=false
@@ -48,7 +48,7 @@ logging.level.com.eason: INFO
 spring.redis.database:  0
 spring.redis.database10:  10
 # Redis服务器地址
-spring.redis.host:  10.20.25.230
+spring.redis.host:  10.20.22.230
 # Redis服务器连接端口
 spring.redis.port:  6379
 # Redis服务器连接密码（默认为空）
