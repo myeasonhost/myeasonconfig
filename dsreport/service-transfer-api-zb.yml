@@ -6,7 +6,7 @@ mybatis.mapper-locations: classpath:com/eason/**/*.xml
 spring:
     datasource:
         name: dataSource
-        url: jdbc:mysql://10.20.25.230:3306/user
+        url: jdbc:mysql://10.20.22.230:3306/user
         username: root
         password: eason
         connectionProperties: config.decrypt=false
